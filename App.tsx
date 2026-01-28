@@ -5,7 +5,7 @@ import IntroScreen from './src/screens/IntroScreen'
 const App = () => {
   return (
     <View>
-      <Text style={styles.text}>App</Text>
+      {/* <Text style={styles.text}>App</Text> */}
       <IntroScreen />
     </View>
   )
