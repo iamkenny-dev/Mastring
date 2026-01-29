@@ -18,14 +18,9 @@ export default IntroScreen
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: '#FFFFFF',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  image: {
-    width: 122,
-    height: 59,
-    // justifyContent: 'center',
-    // alignItems: 'center',
   },
 });
