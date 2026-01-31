@@ -13,11 +13,11 @@ const App = () => {
 
 export default App
 
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: 50,
-  },
-})
+// const styles = StyleSheet.create({
+//   text: {
+//     fontSize: 20,
+//     fontWeight: 'bold',
+//     textAlign: 'center',
+//     marginTop: 50,
+//   },
+// })
