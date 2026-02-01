@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { View } from 'react-native'
 import React from 'react'
 import IntroScreen from './src/screens/IntroScreen'
 
@@ -14,10 +14,5 @@ const App = () => {
 export default App
 
 // const styles = StyleSheet.create({
-//   text: {
-//     fontSize: 20,
-//     fontWeight: 'bold',
-//     textAlign: 'center',
-//     marginTop: 50,
-//   },
+
 // })
