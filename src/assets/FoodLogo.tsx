@@ -1,12 +1,12 @@
 import * as React from 'react';
-import Svg, { Path, Circle, Rect } from 'react-native-svg';
-const FoodLogo = props => (
+import Svg, { Path, Circle, Rect, Svgprops } from 'react-native-svg';
+const FoodLogo = (props: Svgprops) => (
   <Svg
     width={122}
     height={59}
     viewBox="0 0 122 59"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
+    // xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <Path

@@ -1,25 +1,30 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyleSheet, View, Text } from 'react-native';
 // import React from 'react'
 import FoodLogo from '../assets/FoodLogo';
 
 const IntroScreen = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
         <FoodLogo />
-    </View>
+        <Text> Intro Screen </Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
 export default IntroScreen;
 
 const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+  },
   container: {
     flex: 1,
-    flexDirection: 'column',
     backgroundColor: 'red',
     alignItems: 'center', // horizontal center
     justifyContent: 'center', // vertical center
   },
 });
-
