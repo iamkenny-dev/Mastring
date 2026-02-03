@@ -1,15 +1,19 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 // import React from 'react'
 import FoodLogo from '../assets/FoodLogo';
+import SunScreen from '../assets/SunScreen';
+
 
 const IntroScreen = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <FoodLogo />
-        <Text> Intro Screen </Text>
+      </View>
+      <View style={styles.sunScreenContainer}>  
+        <SunScreen />
       </View>
     </SafeAreaView>
   );
@@ -23,8 +27,15 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: 'red',
+    // backgroundColor: 'blue',
     alignItems: 'center', // horizontal center
     justifyContent: 'center', // vertical center
+  },
+  sunScreenContainer: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    // backgroundColor: 'red',
+    // width: '100%',
   },
 });
