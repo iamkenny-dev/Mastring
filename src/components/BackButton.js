@@ -1,4 +1,4 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import { s } from 'react-native-size-matters';
 // import Entypo from '@expo/vector-icons/Entypo';

@@ -1,24 +1,29 @@
 import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import UserAvatar from '../components/UserAvatar';
-import BackButton from '../components/BackButton'
+import BackButton from '../components/BackButton';
+import { s } from 'react-native-size-matters';
+import SocialSection from '../components/SocialSection';
 
 const ContactUsScreen = () => {
   return (
-    <View style={styles.avatar}>
-      <UserAvatar />
-      <BackButton />
-    </View>
+    <>
+      <View style={styles.head}>
+        <BackButton />
+        <UserAvatar />
+      </View>
+      <SocialSection />
+    </>
   );
 };
 
 export default ContactUsScreen;
 
 const styles = StyleSheet.create({
-  avatar: {
-    // marginTop: 50,
-    // flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center',
+  head: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: s(16),
   },
 });
