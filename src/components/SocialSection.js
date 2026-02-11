@@ -1,17 +1,20 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import SendButton from './SendButton';
-import SocialCircle from './SocialCircle';
-import { s, vs } from 'react-native-size-matters';
+// import SocialCircle from './SocialCircle';
+import { vs } from 'react-native-size-matters';
 
-const SocialSection = () => {
+const SocialSection = ({ title, icon }) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <SendButton />
-        <Text style={styles.text}>Whatsapp</Text>
+        {/* <SocialCircle /> */}
+
+        <View style={styles.circle}>{icon}</View>
+
+        <Text style={styles.text}>{title}</Text>
       </View>
-      <SocialCircle />
+      <SendButton />
     </View>
   );
 };

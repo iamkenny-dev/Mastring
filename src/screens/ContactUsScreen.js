@@ -4,6 +4,7 @@ import UserAvatar from '../components/UserAvatar';
 import BackButton from '../components/BackButton';
 import { s } from 'react-native-size-matters';
 import SocialSection from '../components/SocialSection';
+import { logo-whatsapp } from 'react-native-svg';
 
 const ContactUsScreen = () => {
   return (
@@ -12,7 +13,13 @@ const ContactUsScreen = () => {
         <BackButton />
         <UserAvatar />
       </View>
-      <SocialSection />
+      <View style={styles.socialContainer}>
+        <SocialSection icon={logo-whatsapp} title={"Whats up"} />
+        <SocialSection />
+        <SocialSection />
+        <SocialSection />
+        <SocialSection />
+      </View>
     </>
   );
 };
@@ -25,5 +32,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: s(16),
+  },
+  socialContainer: {
+    backgroundColor: '#F5F5FA',
+    borderRadius: s(14),
+    paddingHorizontal: s(18),
+    paddingVertical: s(15),
   },
 });
