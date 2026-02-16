@@ -9,9 +9,7 @@ const SocialSection = ({ title, icon }) => {
     <View style={styles.container}>
       <View style={styles.content}>
         {/* <SocialCircle /> */}
-
-        <View style={styles.circle}>{icon}</View>
-
+        {icon}
         <Text style={styles.text}>{title}</Text>
       </View>
       <SendButton />

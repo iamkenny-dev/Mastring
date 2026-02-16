@@ -4,7 +4,7 @@ import UserAvatar from '../components/UserAvatar';
 import BackButton from '../components/BackButton';
 import { s } from 'react-native-size-matters';
 import SocialSection from '../components/SocialSection';
-import { logo-whatsapp } from 'react-native-svg';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const ContactUsScreen = () => {
   return (
@@ -14,7 +14,7 @@ const ContactUsScreen = () => {
         <UserAvatar />
       </View>
       <View style={styles.socialContainer}>
-        <SocialSection icon={logo-whatsapp} title={"Whats up"} />
+        <SocialSection icon={<Ionicons name="chevron-back" size={24} color="black" />} title={"Whats up"} />
         <SocialSection />
         <SocialSection />
         <SocialSection />
