@@ -14,7 +14,7 @@ const ContactUsScreen = () => {
         <UserAvatar />
       </View>
       <View style={styles.socialContainer}>
-        <SocialSection icon={<Ionicons name="chevron-back" size={24} color="black" />} title={"Whats app"} />
+        <SocialSection icon={<Ionicons name="chevron-back" size={24} color="black" />} title={"What app"} />
         <SocialSection />
         <SocialSection />
         <SocialSection />
