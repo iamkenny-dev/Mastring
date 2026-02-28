@@ -5,22 +5,24 @@ import BackButton from '../components/BackButton';
 import { s } from 'react-native-size-matters';
 import SocialSection from '../components/SocialSection';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Text } from 'react-native-svg';
 
 const ContactUsScreen = () => {
   return (
-    <>
+    <View>
       <View style={styles.head}>
         <BackButton />
         <UserAvatar />
       </View>
       <View style={styles.socialContainer}>
-        <SocialSection icon={<Ionicons name="chevron-back" size={24} color="black" />} title={"What app"} />
+        <Text>Social Media Platforms</Text>
+        <SocialSection icon={<Ionicons name="chevron-back" size={24} color="black" />} title={"Whatsapp"} />
         <SocialSection />
         <SocialSection />
         <SocialSection />
         <SocialSection />
       </View>
-    </>
+    </View>
   );
 };
 
