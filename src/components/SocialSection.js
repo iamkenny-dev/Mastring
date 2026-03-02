@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import SendButton from './SendButton';
 // import SocialCircle from './SocialCircle';
-import { vs } from 'react-native-size-matters';
+import { s, vs } from 'react-native-size-matters';
 
 const SocialSection = ({ title, icon }) => {
   return (
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 16,
+    padding: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#E4E6E8',
     paddingVertical: vs(15),
@@ -33,11 +33,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: 18,
+    // gap: 18,
   },
   text: {
-    fontSize: 16,
-    fontWeight: '500',
-    color: '#000000',
+    marginStart: s(14),
+    flex: 1,
+    fontSize: 12,
+    // fontWeight: '500',
+    color: '#808383',
   },
 });
