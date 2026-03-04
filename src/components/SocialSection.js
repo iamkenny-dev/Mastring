@@ -10,8 +10,8 @@ const SocialSection = ({ title, icon }) => {
       <View style={styles.content}>
         {/* <SocialCircle /> */}
         {icon}
-        <Text style={styles.text}>{title}</Text>
       </View>
+      <Text style={styles.text}>{title}</Text>
       <SendButton />
     </View>
   );
@@ -22,7 +22,7 @@ export default SocialSection;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
     alignItems: 'center',
     padding: 20,
     borderBottomWidth: 1,
@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    // gap: 18,
+    gap: 18,
   },
   text: {
     marginStart: s(14),
     flex: 1,
     fontSize: 12,
-    // fontWeight: '500',
+    fontWeight: '500',
     color: '#808383',
   },
 });
