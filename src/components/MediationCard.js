@@ -1,15 +1,25 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import {
+  Dimensions,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 import React from 'react';
 import { s, vs } from 'react-native-size-matters';
 import { VideoIcon } from '../assets/icons';
 
-const MediationCard = () => {
+const PhoneWidth = Dimensions.get('window').width;
+const cardWidth = (PhoneWidth - s(16) * 3) / 2;
+
+const MediationCard = ({ imageURL, title, date }) => {
   return (
     <ImageBackground
       source={{
-        uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMNz3oPbmjIhlJ2LBcSgETPr2CouHvwLjNKg&s',
+        uri: imageURL,
       }}
       style={styles.imageContainer}
+      //
       imageStyle={styles.image}
     >
       <View style={styles.overlay} />
@@ -18,11 +28,11 @@ const MediationCard = () => {
       </View>
 
       <View style={styles.cardContent}>
-        <Text style={styles.title}>Meditations</Text>
+        <Text style={styles.title}>{title}</Text>
 
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <VideoIcon />
-          <Text style={styles.dateText}>31st Jan - 09:00 am</Text>
+          <Text style={styles.dateText}>{date}</Text>
         </View>
       </View>
     </ImageBackground>
@@ -33,8 +43,8 @@ export default MediationCard;
 
 const styles = StyleSheet.create({
   imageContainer: {
-    height: vs(161),
-    width: s(166),
+    height: vs(140),
+    width: cardWidth,
     borderRadius: s(12),
     overflow: 'hidden',
   },
@@ -55,7 +65,7 @@ const styles = StyleSheet.create({
     fontWeight: 'semibold',
   },
   overlay: {
-    ...StyleSheet.absoluteFillObject,
+    ...StyleSheet.absoluteFill,
     backgroundColor: 'rgba(0, 0, 0, 0.45)',
   },
   dateText: {
