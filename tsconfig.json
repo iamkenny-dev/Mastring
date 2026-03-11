@@ -3,6 +3,6 @@
   "compilerOptions": {
     "types": ["jest"],
   },
-  "include": ["**/*.ts", "**/*.tsx", "App.js", "src/assets/FoodLogo.js"],
+  "include": ["**/*.ts", "**/*.tsx", "App.js", "src/assets/FoodLogo.js", "src/assets/icons.js", "src/components/PayMethodCard.js"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
