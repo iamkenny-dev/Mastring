@@ -10,7 +10,7 @@ const PayMethodCard = () => {
 
         <CashIcon />
         </View>
-      <Text style={styles.label}>Cash</Text>
+      <Text style={styles.label}>Cashh</Text>
     </View>
   )
 }
