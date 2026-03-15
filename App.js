@@ -4,6 +4,8 @@ import React from 'react';
 // import ContactUsScreen from './src/screens/ContactUsScreen';
 // import HomeScreen from './src/screens/HomeScreen';
 import PaymentScreen from './src/screens/PaymentScreen';
+import { createStaticNavigation } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const App = () => {
   return (

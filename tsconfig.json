@@ -3,6 +3,6 @@
   "compilerOptions": {
     "types": ["jest"],
   },
-  "include": ["**/*.ts", "**/*.tsx", "App.js", "src/assets/FoodLogo.js", "src/assets/icons.js", "src/components/PayMethodCard.js"],
+  "include": ["**/*.ts", "**/*.tsx", "App.js", "src/assets/FoodLogo.js", "src/assets/icons.js", "src/components/PayMethodCard.js", "src/screens/PaymentScreen.js", "src/components/PaymentList.js", "src/components/BankCardBox.js", "src/components/AddButton.js"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
