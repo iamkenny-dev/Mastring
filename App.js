@@ -7,6 +7,7 @@ import React from 'react';
 // import { createStaticNavigation } from '@react-navigation/native';
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MainStackNavigator from './src/navigation/MainStackNavigator';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
     // <ContactUsScreen />
     // <HomeScreen />
     // <PaymentScreen />
-    <MainStackNavigator />
+    <NavigationContainer>
+      <MainStackNavigator />
+    </NavigationContainer>
   );
 };
 
