@@ -1,13 +1,16 @@
-import { StyleSheet, View, Text } from 'react-native';
+import { Button, StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 import UserAvatar from '../components/UserAvatar';
 import BackButton from '../components/BackButton';
 import { s, vs } from 'react-native-size-matters';
 import SocialSection from '../components/SocialSection';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-
+import { useNavigation } from '@react-navigation/native';
 
 const ContactUsScreen = () => {
+
+  const navigation = useNavigation();
+
   return (
     <View style={{ marginTop: s(10), paddingHorizontal: s(17) }}>
       <View style={styles.head}>
@@ -40,6 +43,10 @@ const ContactUsScreen = () => {
           title={'Facebook'}
         />
       </View>
+      <Button
+        title="Go to Purple Screen"
+        onPress={() => navigation.navigate('PurpleScreen')}
+      />
     </View>
   );
 };
