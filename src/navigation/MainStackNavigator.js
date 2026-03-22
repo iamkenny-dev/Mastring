@@ -12,10 +12,6 @@ const MainStackNavigator = () => {
     <stack.Navigator
       screenOptions={{ headerShown: true, headerTintColor: '#000000' }}
     >
-      {/* <Stack.Screen
-          name="Details"
-          options={{ headerBackVisible: true }} // for Native Stack
-        /> */}
       <stack.Screen name="ContactScreen" component={ContactScreen} />
       <stack.Screen
         name="IntroScreen"
