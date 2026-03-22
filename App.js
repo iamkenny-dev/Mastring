@@ -6,8 +6,9 @@ import React from 'react';
 // import PaymentScreen from './src/screens/PaymentScreen';
 // import { createStaticNavigation } from '@react-navigation/native';
 // import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import MainStackNavigator from './src/navigation/MainStackNavigator';
+// import MainStackNavigator from './src/navigation/MainStackNavigator';
 import { NavigationContainer } from '@react-navigation/native';
+import BottomTabs from './src/navigation/BottomTabs';
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
     // <HomeScreen />
     // <PaymentScreen />
     <NavigationContainer>
-      <MainStackNavigator />
+      <BottomTabs />
     </NavigationContainer>
   );
 };
