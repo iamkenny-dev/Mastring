@@ -4,8 +4,12 @@ import { s, vs } from 'react-native-size-matters';
 import TopTabs from '../components/TopTabs';
 import MediationCard from '../components/MediationCard';
 import { dummyData } from '../data/data';
+import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
+  
+  const navigation = useNavigation();
+
   return (
     <View
       style={{
