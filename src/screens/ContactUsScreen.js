@@ -44,8 +44,8 @@ const ContactUsScreen = () => {
         />
       </View>
       <Button
-        title="Go to Purple Screen"
-        onPress={() => navigation.navigate('PurpleScreen')}
+        title="Go to Intro Screen"
+        onPress={() => navigation.navigate('IntroScreen')}
       />
     </View>
   );

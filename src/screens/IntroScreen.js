@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Text, Button, StyleSheet, View } from 'react-native';
+import { Button, StyleSheet, View } from 'react-native';
 // import React from 'react'
 import FoodLogo from '../assets/FoodLogo';
 import SunScreen from '../assets/SunScreen';
@@ -17,13 +17,17 @@ const IntroScreen = () => {
         <FoodLogo />
       </View>
 
-      <View style={styles.containerButton}>
+      {/* <View style={styles.containerButton}>
         <Text style={styles.text}>Intro Screen</Text>
         <Button
           title="Go to Home Screen"
           onPress={() => navigation.navigate('HomeScreen')}
         />
-      </View>
+      </View> */}
+      <Button
+              title="Go to Home Screen"
+              onPress={() => navigation.navigate('HomeScreen')}
+            />
       <View style={styles.sunScreenContainer}>
         <SunScreen />
       </View>
@@ -50,13 +54,13 @@ const styles = StyleSheet.create({
     // backgroundColor: 'red',
     // width: '100%',
   },
-  containerButton: {
-    // flex: 1,
-    // backgroundColor: 'gold',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 30,
-  },
+  // containerButton: {
+  //   // flex: 1,
+  //   // backgroundColor: 'gold',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  // },
+  // text: {
+  //   fontSize: 30,
+  // },
 });
