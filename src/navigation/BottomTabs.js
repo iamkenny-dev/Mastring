@@ -5,6 +5,7 @@ import HomeScreen from '../screens/HomeScreen';
 import IntroScreen from '../screens/IntroScreen';
 // import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 // const stack = createStackNavigator();
 const Tabs = createBottomTabNavigator();
@@ -14,7 +15,7 @@ const BottomTabs = () => {
     <Tabs.Navigator
       screenOptions={{ headerShown: true, headerTintColor: '#000000' }}
     >
-      <Tabs.Screen name="ContactScreen" component={ContactScreen} />
+      <Tabs.Screen options={{ title: 'ContactScreen', tabBarIcon: () => <Ionicons name="home-outline" size={30} color="#900" /> }} name="ContactScreen" component={ContactScreen} />
       <Tabs.Screen
         name="IntroScreen"
         component={IntroScreen}
